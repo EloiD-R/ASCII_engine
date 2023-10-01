@@ -13,10 +13,10 @@ stdio, stdlib.h, string.h, unistd.h
 
 ## Archi-tree :
 - graphics_engine :
-       - main.c (your code comes here)
-       - ASCII_engine
-              - engine.c
-              - engine.h 
+ - main.c (your code comes here)
+ - ASCII_engine
+  - engine.c
+  - engine.h 
 
 ### --------------------------------------------------------------------------------------------------------------------
 
