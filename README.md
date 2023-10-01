@@ -4,10 +4,7 @@
 > Documentation is on demand on discord or mail (find them on my GitHub profile).
 
 > headers/libs used:
- #include <stdio.h>
- #include <stdlib.h>
- #include <string.h>
- #include <unistd.h>
+stdio, stdlib.h, string.h, unistd.h
 
 > I didn't test the program on windows or mac, only in Pop_OS, so if it is not working, please tell me on discord or mail.
 
@@ -17,8 +14,9 @@
 ## Archi-tree :
 > - graphics_engine :
 >       - main.c (for tests)
->       - engine.c
->       - engine.h 
+>       - ASCII_engine
+>              - engine.c
+>              - engine.h 
 
 ### --------------------------------------------------------------------------------------------------------------------
 
