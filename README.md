@@ -12,11 +12,11 @@ stdio, stdlib.h, string.h, unistd.h
 > Just see in the code, or the vidéo; it is too complex and strange to explain all.
 
 ## Archi-tree :
-> - graphics_engine :
->       - main.c (for tests)
->       - ASCII_engine
->              - engine.c
->              - engine.h 
+- graphics_engine :
+       - main.c (your code comes here)
+       - ASCII_engine
+              - engine.c
+              - engine.h 
 
 ### --------------------------------------------------------------------------------------------------------------------
 
