@@ -28,7 +28,7 @@
 > - [X] Code clearScreen
 > - [X] Code coordinates system
 > - [X] Code lines if i have enough time (it is buggy on diagonals but don't worry).
-> - [ ] Code squares if i have enough time
+> - [X] Code squares if i have enough time
 > - [ ] Code circles if i have enough time
 > - [ ] Code snake if i have enough time
 
