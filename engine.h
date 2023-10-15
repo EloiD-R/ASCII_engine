@@ -37,8 +37,7 @@ int placePixel(coordinates coordinates, char character);
 int display();
 int clearImage();
 void drawLine(coordinates start, coordinates end, char character);
-
-
+void drawSquare(coordinates topLeft, coordinates bottomRight, char character, int filled);
 
 #endif // BACKGROUND_CHARACTER
 #endif //GRAPHICS_ENGINE_ENGINE_H

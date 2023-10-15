@@ -42,17 +42,50 @@ int clearImage(){
 
 
 
-void drawLine(struct coordinates point1, struct coordinates point2, char character) {
+void drawLine(coordinates point1, coordinates point2, char character) {
     coordinates start = {(int)point1.x, (int)point1.y};
-    coordinates end = {(int)point1.x, (int)point1.y};
+    coordinates end = {(int)point2.x, (int)point2.y};
 
-    for(int index = 0; index < TERMINAL_COLUMNS; index++) {
-        placePixel(end, character);
-        if(end.x < point2.x){
-            end.x++;
+    while (start.x != end.x || start.y != end.y) {
+        placePixel(start, character);
+
+        if (start.x < end.x) {
+            start.x++;
+        } else if (start.x > end.x) {
+            start.x--;
         }
-        if(end.y < point2.y){
-            end.y++;
+
+        if (start.y < end.y) {
+            start.y++;
+        } else if (start.y > end.y) {
+            start.y--;
+        }
+    }
+    placePixel(end, character); // Place the last pixel at the end point.
+}
+
+
+
+
+
+void drawSquare(coordinates topLeft, coordinates bottomRight, char character, int filled) {
+    coordinates topRight = {(int)bottomRight.x, (int)topLeft.y};
+    coordinates bottomLeft = {(int)topLeft.x, (int)bottomRight.y};
+
+    if (!filled) {
+        drawLine(topLeft, topRight, character);
+        drawLine(topRight, bottomRight, character);
+        drawLine(bottomRight, bottomLeft, character);
+        drawLine(bottomLeft, topLeft, character);
+    } else {
+        for (int y = topLeft.y + 1; y < bottomRight.y; y++) {
+            for (int x = topLeft.x + 1; x < bottomRight.x; x++) {
+                coordinates nextPoint = {x, y};
+                placePixel(nextPoint, character);
+            }
         }
     }
 }
+
+
+
