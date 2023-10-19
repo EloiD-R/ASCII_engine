@@ -44,9 +44,6 @@ int main() {
 
         drawSquare(topLeft2, bottomRight2, '@', 1);
 
-        point2.x += 1;
-        placePixel(point2, '#');
-
         display();
 
         usleep(frameDuration);
