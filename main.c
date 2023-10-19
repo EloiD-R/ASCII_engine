@@ -20,8 +20,8 @@ int main() {
 
 
     while (true) {
-        clearImage();
 
+        clearImage();
         drawSquare(topLeft1, bottomRight1, '#', 0);
 
         drawLine(point1, point2, '#');
@@ -42,7 +42,10 @@ int main() {
         bottomRight2.y = topLeft2.y + 5;//(bottomRight2.y - topLeft2.y);
 
 
-        drawSquare(topLeft2, bottomRight2, '@', 1);
+        drawSquare(topLeft2, bottomRight2, '@', 1);*/
+
+        point2.x += 1;
+        placePixel(point2, '#');
 
         display();
 

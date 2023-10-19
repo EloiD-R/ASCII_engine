@@ -12,8 +12,8 @@
 
 
 // In number of chars.
-#define TERMINAL_ROWS 24
-#define TERMINAL_COLUMNS 80
+#define TERMINAL_ROWS 49
+#define TERMINAL_COLUMNS 190
 
 // Define booleans.
 #define true 1
